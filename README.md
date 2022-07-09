@@ -7,3 +7,6 @@ Contributors:
 2. Sanket Bhimani 
 3. Stuti Bhatt 
 4. Khushbu Chauhan
+
+Technology Used: UI-UX, Java, Firebase
+Software Used: Figma, Android Studio 
