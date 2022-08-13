@@ -1,4 +1,4 @@
-# Book-on-hand-app
+# Personal Budget Application 
 Software Group Project (SEM-5)
 
 Contributors:
