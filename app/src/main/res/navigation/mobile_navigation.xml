@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.expensestracker.mainactivity.fragments.home.HomeFragment"
+        android:label="@string/month_s_expenses"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_budgetManager"
+        android:name="com.example.expensestracker.mainactivity.fragments.budgetmanager.BudgetManagerFragment"
+        android:label="@string/budget_manager"
+        tools:layout="@layout/fragment_budget_manager" />
+
+    <fragment
+        android:id="@+id/nav_budgetPlanner"
+        android:name="com.example.expensestracker.budgetplanner.ui.BudgetPlannerFragment"
+        android:label="@string/budget_planner"
+        tools:layout="@layout/fragment_budget_planner" />
+
+    <fragment
+        android:id="@+id/nav_budget_analysis"
+        android:name="com.example.expensestracker.budgetanalysis.BudgetAnalysisFragment"
+        android:label="@string/budget_analysis"
+        tools:layout="@layout/fragment_budget_planner" />
+
+    <fragment
+        android:id="@+id/nav_monthly_expenses_analysis"
+        android:name="com.example.expensestracker.monthestracker.ui.MonthlyExpensesAnalysisFragment"
+        android:label="@string/your_monthly_expenses_analysis"
+        tools:layout="@layout/fragment_monthly_expenses_analysis" />
+
+
+
+</navigation>

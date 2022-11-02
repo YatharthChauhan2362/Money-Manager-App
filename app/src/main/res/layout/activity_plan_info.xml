@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".budgetplanner.activities.PlanInfoActivity">
+    <!--
+(String title, String description, double moneyNeeded, Date deadline)
+-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/plan_title"
+                app:startIconDrawable="@drawable/icon_shopaholic"
+                app:counterEnabled="true"
+                app:counterMaxLength="50"
+                app:startIconContentDescription="@string/content_description_end_icon">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/plan_title_tf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textAutoCorrect"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="10.0dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/plan_desc"
+                app:startIconDrawable="@drawable/icon_shopaholic"
+                app:counterEnabled="true"
+                app:counterMaxLength="50"
+                app:endIconMode="clear_text"
+                app:startIconContentDescription="@string/content_description_end_icon">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/plan_desc_tf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textAutoCorrect"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="10.0dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/needed_budget"
+                app:startIconDrawable="@drawable/ic_dollar"
+                app:endIconMode="clear_text"
+                app:prefixText="$"
+                app:startIconContentDescription="@string/content_description_end_icon">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/plan_budget_tf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="10.0dp"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/plan_deadline_date"
+                android:textSize="16.0dp"/>
+
+            <DatePicker
+                android:layout_marginTop="10dp"
+                android:id="@+id/plan_date_picker"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="20.0dp"/>
+
+            <Button
+                android:id="@+id/submitBu"
+                android:onClick="onClickAddPlan"
+                android:padding="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_plan"
+                android:textAllCaps="false"
+                android:background="@color/colorPrimary"
+                android:textColor="#fff"
+                android:textSize="20.0dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
